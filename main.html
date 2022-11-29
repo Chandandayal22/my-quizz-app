@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="quiz.css">
+
+</head>
+
+<body>
+  <Div class="headingtext display" id="display">
+    <div class="icon"></div>
+    <h1 class="hello">Hello user!</h1>
+    <p><b>Enter your name to countinue the Quiz.</b></p>
+    <div>
+      <input class="name" type="text" id="name" name="username" placeholder="ENTER YOUR NAME...">
+      <button type="submit">Enter</button>
+      <p class="inform">You'll have 10 seconds to answer each questions</p>
+    </div>
+    <H1 id="selectctgry">Select Category</H1>
+    <div class="category">
+      <button class="categorytypes" id="ctgry1">Pies And Cisterns</button>
+      <button class="categorytypes" id="ctgry2">Probability</button>
+      <button class="categorytypes" id="ctgry3">Problem On Ages</button>
+      <button class="categorytypes" id="ctgry4">Profit And Loss</button>
+    </div>
+  </Div>
+  <div class="headingtext question" id="container">
+    <div class="series" id="series">count of question</div>
+    <div class="timing" id="timing">left times <span></span>
+    </div>
+    <div class="que" id="questionblock">
+    </div><br>
+    <div class="ansgroup">
+      <ul>
+        <li>
+          <input type="radio" class="categorytypes" name="options" id="answerA">
+          <label for="option1" id="ans1"></label>
+        </li><br>
+        <li>
+          <input type="radio" class="categorytypes" name="options" id="answerB">
+          <label for="option2" id="ans2"></label>
+        </li><br>
+        <li>
+          <input type="radio" class="categorytypes" name="options" id="answerC">
+          <label for="option3" id="ans3"></label>
+        </li><br>
+        <li>
+          <input type="radio" class="categorytypes" name="options" id="answerD">
+          <label for="option4" id="ans4"></label>
+        </li>
+      </ul>
+    <button class="next" type="button" id="submit" >save and next</button>
+  </div>
+  </div>
+
+  <script src="file1.js"></script>
+</body>
+
+</html>
