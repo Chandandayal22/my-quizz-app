@@ -18,45 +18,45 @@
     <div>
       <input class="name" type="text" id="name" name="username" placeholder="ENTER YOUR NAME...">
       <button type="submit">Enter</button>
-      <p class="inform">You'll have 10 seconds to answer each questions</p>
+      <p class="inform">You'll have 15 seconds to answer each questions</p>
     </div>
     <H1 id="selectctgry">Select Category</H1>
     <div class="category">
-      <button class="categorytypes" id="ctgry1">Pies And Cisterns</button>
-      <button class="categorytypes" id="ctgry2">Probability</button>
-      <button class="categorytypes" id="ctgry3">Problem On Ages</button>
-      <button class="categorytypes" id="ctgry4">Profit And Loss</button>
+      <button class="categorytypes" id="ctgry1" onclick="Pipes1()">Pies And Cisterns</button>
+      <button class="categorytypes" id="ctgry2" onclick="Probability2()">Probability</button>
+      <button class="categorytypes" id="ctgry3" onclick="Ages3()">Problem On Ages</button>
+      <button class="categorytypes" id="ctgry4" onclick="Profit4()">Profit And Loss</button>
     </div>
   </Div>
   <div class="headingtext question" id="container">
     <div class="series" id="series">count of question</div>
-    <div class="timing" id="timing">left times <span></span>
+    <div class="timing" id="timing">
     </div>
     <div class="que" id="questionblock">
     </div><br>
     <div class="ansgroup">
       <ul>
         <li>
-          <input type="radio" class="categorytypes" name="options" id="answerA">
+          <input type="radio" class="opt" name="options" id="a">
           <label for="option1" id="ans1"></label>
         </li><br>
         <li>
-          <input type="radio" class="categorytypes" name="options" id="answerB">
+          <input type="radio" class="opt" name="options" id="b">
           <label for="option2" id="ans2"></label>
         </li><br>
         <li>
-          <input type="radio" class="categorytypes" name="options" id="answerC">
+          <input type="radio" class="opt" name="options" id="c">
           <label for="option3" id="ans3"></label>
         </li><br>
         <li>
-          <input type="radio" class="categorytypes" name="options" id="answerD">
+          <input type="radio" class="opt" name="options" id="d">
           <label for="option4" id="ans4"></label>
         </li>
       </ul>
     <button class="next" type="button" id="submit" >save and next</button>
   </div>
   </div>
-
+  <div id="performance"></div>
   <script src="file1.js"></script>
 </body>
 
